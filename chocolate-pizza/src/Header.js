@@ -45,7 +45,7 @@ const socialLinks = [{
 export default class Header extends Component {
 
     render() {
-    const LinkNodes = socialLinks.map(link => (<SocialLink link={link} />));
+    // const LinkNodes = socialLinks.map(link => (<SocialLink link={link} />));
 
     return (
         <header className="flex">

@@ -4,7 +4,10 @@ import Header from "./Header.js"
 import { Recipe, RecipeCard } from "./Recipe.js"
 import AuthorInfo from "./AuthorInfo.js"
 import Footer from "./Footer.js"
-import './App.css';
+// import './App.css';
+import './style.css';
+import './header.css';
+import './footer.css';
 
 function App() {
   return (
@@ -15,7 +18,7 @@ function App() {
       <RecipeCard />
       <AuthorInfo />
       <Footer />
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -28,7 +31,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
     </div>
   );

@@ -1,12 +1,30 @@
 import React, { Component } from "react";
 
-export class Recipe extends Component {
+export class PizzaImage extends Component {
+
     render() {
+
+    const pizzaImage = {
+        className: "pizza",
+        src: "https://github.com/alchemycodelab/alchemy-bootcamp-i-january-2019/blob/master/curriculum/week-02/class-09/LAB-10/LAB-10a-chocolate-pizza/lab-assets/choco-pizza.png?raw=true",
+        alt: "Pizza photo"
+    }
+    
+    return <img className={pizzaImage.className} src={pizzaImage.src} alt={pizzaImage.alt} />
+    return <img className={this.className} src={this.src} alt={this.alt} />
+
+    }
+}
+
+export class Recipe extends Component {
+
+    render() {
+
         return (
             <main> 
                 <h1>Chocolate Pizza</h1>
                 <h3> Posted on January 2020 / Desserts </h3>
-                    <img className="pizza" src="https://github.com/alchemycodelab/alchemy-bootcamp-i-january-2019/blob/master/curriculum/week-02/class-09/LAB-10/LAB-10a-chocolate-pizza/lab-assets/choco-pizza.png?raw=true" alt="" />
+                <PizzaImage />
                 <p>For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.
                 </p>
                 <p> Ice cream: In a small over medium heat, combine milk, and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.</p>
@@ -22,7 +40,7 @@ export class RecipeCard extends Component {
         return (
             <div id="recipe-card">
                 <div id="recipe-card-background">
-                    <img src="./assets/list-bg.png" alt="" />
+                    <img src="list-bg.png" alt="" />
                 </div>
                 <div id="recipe-card-contents">
                     <ul>
@@ -45,3 +63,13 @@ export class RecipeCard extends Component {
             );
     }
 }
+
+// create a variable containing the array of objects (url and alt)
+// const linksArray = this.props.links
+// //make a new array with .map that returns <img> tags for each object in array
+// const linksElements = linksArray.map(object => {
+//     return <img alt={object.alt_text} src={object.url}/>
+// });
+
+// <div id = "navigation"> {linksElements}
+//  </div>
