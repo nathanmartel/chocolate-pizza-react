@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+
+body .container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p {
+    color: #666;
+}
+
+main p {
+    font-size: 1.2rem;
+    text-indent: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+#recipe-card {
+    position: absolute;
+    height: 500px;
+}
+#recipe-card-background {
+    position: absolute;
+}
+
+#recipe-card-contents {
+    position: relative;    
+}
+
+#recipe-card-contents ul {
+    columns: 2;
+    margin-top: 0;
+    margin: 40px
+}
+
+#recipe-card-contents li {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+
+}

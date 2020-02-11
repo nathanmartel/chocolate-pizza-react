@@ -1,26 +1,8 @@
 import React, { Component } from "react";
 
-export default class WholePizza extends Component {
+export class Recipe extends Component {
     render() {
         return (
-            <div>
-            <header className="flex">
-                <div>
-                    <img className="logo" src="./assets/logo.png" alt="" />
-                    <img className="logo-wordmark" src="./assets/delicious-logo.png" alt="" />
-                </div>
-                <ul className="social">
-                    <li id="facebook-icon"><img src="./assets/fb-icon.png" alt="" /></li>
-                    <li id="twitter-icon"><img src="./assets/twit-icon.png" alt="" /></li>
-                    <li id="google-plus-icon"><img src="./assets/gp-icon.png" alt="" /></li>
-                    <li id="instagram-icon"><img src="./assets/insta-icon.png" alt="" /></li>
-                    <li id="flickr-icon"><img src="./assets/flic-icon.png" alt="" /></li>
-                    <li id="pinterest-icon"><img src="./assets/pint-icon.png" alt="" /></li>
-                    <li id="rss-icon"><img src="./assets/rss-icon.png" alt="" /></li>
-                    <li id="mail-icon"><img src="./assets/mail-icon.png" alt="" /></li>
-                </ul>
-            </header>
-
             <main> 
                 <h1>Chocolate Pizza</h1>
                 <h3> Posted on January 2020 / Desserts </h3>
@@ -31,6 +13,13 @@ export default class WholePizza extends Component {
                 <p> Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass tupperware. Freeze for at least two hours.</p>
             </main>
 
+            );
+    }
+}
+
+export class RecipeCard extends Component {
+    render() {
+        return (
             <div id="recipe-card">
                 <div id="recipe-card-background">
                     <img src="./assets/list-bg.png" alt="" />
@@ -51,25 +40,6 @@ export default class WholePizza extends Component {
                         <li> 1 cup hiney roasted pecans, roughly chopped</li>
                     </ul>
                 </div>
-            </div>
-
-            <div className="author-share">
-                <div className="author">
-                    <img src="./assets/van-pic.png" alt="" />
-                    <h4>Vanessa Stevenson</h4>
-                    <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
-                </div>
-                <div className="share-recipe">
-                    <button>Share Recipe</button>
-                </div>
-            </div>
-
-            <footer>
-                <div className="footer-rule"></div>
-                <p>Delicious &copy; 2013 &bull; All Rights Reserved.</p>
-                <p>Proudly published with Ghost</p>
-            </footer>
-            
             </div>
 
             );

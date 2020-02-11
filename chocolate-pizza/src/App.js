@@ -1,12 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
-import WholePizza from "./WholePizza.js"
+import Header from "./Header.js"
+import { Recipe, RecipeCard } from "./Recipe.js"
+import AuthorInfo from "./AuthorInfo.js"
+import Footer from "./Footer.js"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <WholePizza />
+    <div className="container">
+      <Header />
+      <Recipe />
+      <RecipeCard />
+      <AuthorInfo />
+      <Footer />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,6 +29,7 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
     </div>
   );
 }
